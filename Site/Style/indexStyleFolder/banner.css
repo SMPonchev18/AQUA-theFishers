@@ -1,7 +1,6 @@
 #banner{
     width:100%;
     height:550px;
-    border-style: solid;
     background-image:url("../../Images/banner.jpg");
     background-size:cover;
     background-repeat:no-repeat;
