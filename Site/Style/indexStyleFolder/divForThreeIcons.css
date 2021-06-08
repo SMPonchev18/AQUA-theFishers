@@ -1,12 +1,10 @@
 #divForThreeIcons{
-    border-style:solid;
     width:70%;
     height:290px;
     margin:auto;
-    
+    margin-top:45px;
 }
 .divForTheIconsAndTheTextUnderTheIcons{
-    border-style:solid;
     width:20%;
     height:290px;
     float:left;
@@ -16,12 +14,9 @@
     width:51%;
     height:140px;
     margin-left: 65px;
-  
 }
 .textUnderTheIcons{
-    border-style:solid;
     width:100%;
-    border-color:brown;
     height: 140px;
 }
 .titleOfTheTextUnderTheIcons{
@@ -30,7 +25,7 @@
     text-align:center;
 }
 .textOfTheTextUnderTheIcons{
-    font-size:14px;
+    font-size:15px;
     font-family: 'Comfortaa', cursive;
     text-align:center;
 }
