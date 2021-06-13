@@ -1,7 +1,18 @@
-#asideNavigationBar{
+#asideDivForTheNavigationBarLogoAndIcons{
     top:0px;
 	position:sticky;
-	background-color:#1411dbce;
-	height:900px;
+	background-color:red;
+	height:100rem;
 	width:20%;
+	margin-top:-16px;
+}
+#divForTheLogo{
+	width:100%;
+	height:10rem;
+	background-color: burlywood;
+
+}
+#logo{
+	width:30%;
+	height:60%;
 }
