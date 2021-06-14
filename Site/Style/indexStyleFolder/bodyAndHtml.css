@@ -1,8 +1,8 @@
 body{
-    overflow-x:hidden;
     font-size: 62,5%;
 }
 body, html{
     margin:0px;
     width:100%;
+    height:100%;
 }

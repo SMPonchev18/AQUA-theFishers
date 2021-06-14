@@ -1,0 +1,50 @@
+#divForLines{
+	height:100%;
+	position:fixed;
+	width:14.8%;
+	background-color:#16202b;
+}
+#asideDivForTheNvigationBarAndlogoAndIcons{
+	height:100%;
+	width:93%;
+	border-right-style:solid;
+	border-left-style:solid;
+	border-right-color:#1c377d;
+	border-left-color:#1c377d;
+	border-right-width:0.18rem;
+	border-left-width:0.18rem;
+	margin:auto;
+}
+
+#logoDiv{
+	width:100%;
+	height:25%;
+}
+#logo{
+	background-image: url('../../Icons/logo.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width:100%;
+	height:100%;
+}
+
+#navigationBar{
+	width:102%;
+	height:65%;
+	margin-left:-2px;
+}
+.navigationBarLinks{
+	display:block;
+	text-decoration:none;
+	color:#fff;
+	font-family: 'Comfortaa', cursive;
+	text-align:center;
+	font-size:1.5rem;
+	margin-top:3rem;
+}
+#startLink::before{
+	border-right-style:solid;
+	border-left-style:solid;
+	border-right-color:#1c7d24;
+	border-left-color:#1c7d24;
+}
