@@ -9,8 +9,8 @@
 	width:93%;
 	border-right-style:solid;
 	border-left-style:solid;
-	border-right-color:#1c377d;
-	border-left-color:#1c377d;
+	border-right-color:#188177;
+	border-left-color:#188177;
 	border-right-width:0.18rem;
 	border-left-width:0.18rem;
 	margin:auto;
@@ -30,7 +30,7 @@
 
 #navigationBar{
 	width:102%;
-	height:65%;
+	height:54%;
 	margin-left:-2px;
 }
 .navigationBarLinks{
@@ -42,9 +42,20 @@
 	font-size:1.5rem;
 	margin-top:3rem;
 }
-#startLink::before{
-	border-right-style:solid;
-	border-left-style:solid;
-	border-right-color:#1c7d24;
-	border-left-color:#1c7d24;
+
+#divIcon{
+	width:100%;
+	height:9%;
+	margin-top:3rem;
+}
+.iconsInNavigationBar{
+	width:11%;
+	height:35%;
+	margin-top:2.4rem;
+	margin-left:2rem;	
+}
+#darkAndLightModeIcon{
+	width:13%;
+	height:43%;
+	
 }
