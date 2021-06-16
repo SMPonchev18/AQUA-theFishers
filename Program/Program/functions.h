@@ -9,3 +9,5 @@ void CreateRecord();
 void MainProgramme();
 
 int inputChoiceProgramme();
+
+void DisplayRecord();

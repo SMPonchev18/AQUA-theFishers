@@ -35,6 +35,30 @@ void CreateRecord()
 	}
 }
 
+void DisplayRecord()
+{
+	int counter = 0;
+
+	cout << "==============================" << endl;
+	cout << "      Current Record(s)" << endl;
+	cout << "==============================" << endl;
+	cout << " No.   |   Id   |     Name     " << endl;
+	cout << "------------------------------" << endl;
+
+	for (int i = 0; i < 100; i++)
+	{
+		if (record_id[i] != "\0")
+		{
+			counter++;
+			cout << " " << counter << "       " << record_id[i] << "        " << record_name[i] << endl;
+		}
+	}
+
+	cout << "------------------------------" << endl;
+
+	cout << endl;
+}
+
 void MainProgramme()
 {
 	int option;
@@ -72,6 +96,8 @@ void MainProgramme()
 			break;
 
 		case 5:
+			system("ClS");
+			DisplayRecord();
 			break;
 
 		case 6:
