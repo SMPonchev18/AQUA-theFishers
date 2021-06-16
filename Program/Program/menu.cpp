@@ -77,9 +77,30 @@ void choice(int user_choice)
         break;
 
     case 4:
+        printTeamInfo();
         break;
 
     case 5:
-        break;
+        exit(0);
     }
+}
+
+void printTeamInfo()
+{
+    cout << "========================================================================================" << endl;
+    cout << "                                    TEAM INFORMATION" << endl;
+    cout << "========================================================================================" << endl << endl;
+    cout << " Hello! Our team is TheFishers!" << endl;
+    cout << " We are students from PGKPI. This is our program for the colaborative project AQUA." << endl << endl;
+    cout << " Here are our names and tasks in this project:" << endl << endl;
+    cout << "      Zjivko Spasov - 8G - HTML/CSS" << endl;
+    cout << "      Soner Solakov - 8A - HTML/CSS" << endl;
+    cout << "      Alexandra Staykova - 9V - JavaScript" << endl;
+    cout << "      Tereza Opanska - 9V - C++" << endl;
+    cout << "      Petar Petkov - 10G - SQL" << endl;
+    cout << "      Stoyan Ponchev - 10G - SQL" << endl << endl;
+    cout << " Thank you for using our program! We hope you like it!" << endl << endl;
+
+    /* cout << " Would you like to go back to the menu? - Y/N" << endl;
+    cout << " Your choice: "; */
 }
