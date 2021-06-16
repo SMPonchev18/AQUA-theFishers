@@ -67,6 +67,7 @@ void choice(int user_choice)
     switch (user_choice)
     {
     case 1:
+        MainProgramme();
         break;
 
     case 2:
