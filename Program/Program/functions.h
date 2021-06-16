@@ -5,3 +5,5 @@
 using namespace std;
 
 void MainProgramme();
+
+int inputChoiceProgramme();
