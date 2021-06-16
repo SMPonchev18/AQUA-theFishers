@@ -4,6 +4,8 @@
 
 using namespace std;
 
+void CreateRecord();
+
 void MainProgramme();
 
 int inputChoiceProgramme();

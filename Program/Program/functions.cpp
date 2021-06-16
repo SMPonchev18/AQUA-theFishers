@@ -7,9 +7,38 @@
 
 using namespace std;
 
+
+string record_id[100] = {};
+string record_name[100] = {};
+
+void CreateRecord()
+{
+	char id[4];
+	char name[50];
+
+	cin.ignore();
+
+	cout << "Enter record ID >> ";
+	cin.getline(id, 4);
+
+	cout << "Enter record name >> ";
+	cin.getline(name, 50);
+
+	for (int i = 0; i < 100; i++)
+	{
+		if (record_id[i] == "\0")
+		{
+			record_id[i] = id;
+			record_name[i] = name;
+			break;
+		}
+	}
+}
+
 void MainProgramme()
 {
 	int option;
+	system("CLS");
 
 	do {
 		cout << "=======================" << endl;
@@ -21,7 +50,7 @@ void MainProgramme()
 		cout << " 4 - Search" << endl;
 		cout << " 5 - Display" << endl;
 		cout << " 6 - Return and save" << endl << endl;
-		cout << "========================" << endl << endl;
+		cout << "========================" << endl;
 
 		cout << endl << "Select >> ";
 		option = inputChoiceProgramme();
@@ -29,6 +58,8 @@ void MainProgramme()
 		switch (option)
 		{
 		case 1:
+			CreateRecord();
+			system("CLS");
 			break;
 
 		case 2:
