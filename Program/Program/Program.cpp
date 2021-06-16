@@ -5,5 +5,5 @@ using namespace std;
 
 int main()
 {
-	// Print out menu
+	printMenu();
 }
