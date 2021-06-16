@@ -1,0 +1,10 @@
+#firstBlockOfContent{
+   background-color: yellow;
+}
+#aquaTitle{
+    width: 75%;
+    height:25%;
+    margin:auto;
+    margin-top:3rem;
+    border-style: solid;
+}
