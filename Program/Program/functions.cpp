@@ -13,13 +13,13 @@ string record_name[100] = {};
 
 void CreateRecord()
 {
-	char id[4];
+	char id[5];
 	char name[50];
 
 	cin.ignore();
 
 	cout << "Enter record ID >> ";
-	cin.getline(id, 4);
+	cin.getline(id, 5);
 
 	cout << "Enter record name >> ";
 	cin.getline(name, 50);
@@ -35,9 +35,34 @@ void CreateRecord()
 	}
 }
 
+void SearchRecord(string search)
+{
+	cout << "==============================" << endl;
+	cout << "      Current Record(s)" << endl;
+	cout << "==============================" << endl;
+
+	int number = 0;
+
+	for (int i = 0; i < 100; i++)
+	{
+		if (record_id[i] == search)
+		{
+			number++;
+			cout << " " << number << "       " << record_id[i] << "        " << record_name[i] << endl;
+		}
+	}
+
+	if (number == 0)
+	{
+		cout << "No Record found!" << endl;
+	}
+
+	cout << "------------------------------" << endl << endl;
+}
+
 void DisplayRecord()
 {
-	int counter = 0;
+	int number = 0;
 
 	cout << "==============================" << endl;
 	cout << "      Current Record(s)" << endl;
@@ -49,8 +74,8 @@ void DisplayRecord()
 	{
 		if (record_id[i] != "\0")
 		{
-			counter++;
-			cout << " " << counter << "       " << record_id[i] << "        " << record_name[i] << endl;
+			number++;
+			cout << " " << number << "       " << record_id[i] << "        " << record_name[i] << endl;
 		}
 	}
 
@@ -62,6 +87,7 @@ void DisplayRecord()
 void MainProgramme()
 {
 	int option;
+	string input_id;
 	system("CLS");
 
 	do {
@@ -71,10 +97,10 @@ void MainProgramme()
 		cout << " 1 - Create" << endl;
 		cout << " 2 - Update" << endl;
 		cout << " 3 - Delete" << endl;
-		cout << " 4 - Search" << endl;
+		cout << " 4 - Search by ID" << endl;
 		cout << " 5 - Display" << endl;
 		cout << " 6 - Return and save" << endl << endl;
-		cout << "========================" << endl;
+		cout << "=======================" << endl << endl;
 
 		cout << endl << "Select >> ";
 		option = inputChoiceProgramme();
@@ -93,6 +119,11 @@ void MainProgramme()
 			break;
 
 		case 4:
+			cin.ignore();
+			cout << endl << "Search by ID >> ";
+			getline(cin, input_id);
+			system("CLS");
+			SearchRecord(input_id);
 			break;
 
 		case 5:
