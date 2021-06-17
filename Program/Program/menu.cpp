@@ -81,6 +81,8 @@ void choice(int user_choice)
         break;
 
     case 5:
+        system("CLS");
+        cout << "Thank you for using our program! :)" << endl; 
         exit(0);
     }
 }

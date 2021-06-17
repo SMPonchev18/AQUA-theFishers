@@ -21,7 +21,7 @@ void OpenFile()
 
 		while (getline(file, line))
 		{
-			int j = line.size();
+			size_t j = line.size();
 			record_id[i] = line.substr(0, 4);
 			record_name[i] = line.substr(5, j - 5);
 			i++;
@@ -36,27 +36,35 @@ void OpenFile()
 
 void CreateRecord()
 {
-	char id[5];
+	char id[100];
 	char name[50];
 	bool check = false;
+	bool check2 = false;
 
 	cin.ignore();
 
-	cout << "Enter record ID >> ";
+	cout << endl  << "Enter record ID >> ";
 
-	while (!check)
+	while (!check || !check2)
 	{
-		cin.getline(id, 5);
+		cin.getline(id, 100);
 		check = idCheck(id);
+		check2 = idAlreadyExist(id);
 
 		if (!check)
 		{
-			cout << "ID must be made out of 4 symbols!" << endl;
+			cout << endl << "ID must be made out of 4 symbols!" << endl << endl;
+			cout << "Enter record ID >> ";
+		}
+
+		if (!check2)
+		{
+			cout << endl << "This ID already exists!" << endl << endl;
 			cout << "Enter record ID >> ";
 		}
 	}
 
-	cout << "Enter record name >> ";
+	cout << endl << "Enter record name >> ";
 	cin.getline(name, 50);
 
 	for (int i = 0; i < 100; i++)
@@ -140,7 +148,7 @@ void SearchRecord(string search)
 		if (record_id[i] == search)
 		{
 			count++;
-			cout << " " << count << "        " << record_id[i] << "        " << record_name[i] << endl;
+			cout << " " << count << "        " << record_id[i] << "      " << record_name[i] << endl;
 		}
 	}
 
@@ -167,7 +175,7 @@ void DisplayRecord()
 		if (record_id[i] != "\0")
 		{
 			count++;
-			cout << " " << count << "        " << record_id[i] << "        " << record_name[i] << endl;
+			cout << " " << count << "        " << record_id[i] << "      " << record_name[i] << endl;
 		}
 	}
 
@@ -300,6 +308,23 @@ bool idCheck(string id)
 	if (id.size() != 4)
 	{
 		return false;
+	}
+
+	return true;
+}
+
+bool idAlreadyExist(string id)
+{
+	for (int i = 0; i < 100; i++)
+	{
+		if (record_id[i] == id)
+		{
+			return false;
+		}
+		if (record_id[i] == "\0")
+		{
+			break;
+		}
 	}
 
 	return true;
