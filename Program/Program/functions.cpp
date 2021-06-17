@@ -7,7 +7,6 @@
 
 using namespace std;
 
-
 string record_id[100] = {};
 string record_name[100] = {};
 
@@ -62,6 +61,33 @@ void UpdateRecord(string search)
 	{
 		system("CLS");
 		cout << "Record doesn't exist!" << endl;
+	}
+}
+
+void DeleteRecord(string search)
+{
+	int count = 0;
+
+	for (int i = 0; i < 100; i++)
+	{
+		if (record_id[i] == search)
+		{
+			count++;
+
+			record_name[i] = "";
+			record_id[i] = "";
+
+			system("CLS");
+
+			cout << "Successfully deleted!" << endl;
+			break;
+		}
+	}
+
+	if (count == 0)
+	{
+		system("CLS");
+		cout << "ID doesn't exist!" << endl;
 	}
 }
 
@@ -150,6 +176,10 @@ void MainProgramme()
 			break;
 
 		case 3:
+			cin.ignore();
+			cout << endl << "Delete by ID >> ";
+			getline(cin, input_id);
+			DeleteRecord(input_id);
 			break;
 
 		case 4:
