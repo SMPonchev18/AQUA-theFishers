@@ -10,6 +10,30 @@ using namespace std;
 string record_id[100] = {};
 string record_name[100] = {};
 
+void OpenFile()
+{
+	string line;
+	ifstream file("Records.txt");
+
+	if (file.is_open())
+	{
+		int i = 0;
+
+		while (getline(file, line))
+		{
+			int j = line.size();
+			record_id[i] = line.substr(0, 4);
+			record_name[i] = line.substr(5, j - 5);
+			i++;
+		}
+	}
+
+	else
+	{
+		cout << "Enable to open the file!" << endl;
+	}
+}
+
 void CreateRecord()
 {
 	char id[5];
@@ -104,7 +128,7 @@ void SearchRecord(string search)
 		if (record_id[i] == search)
 		{
 			count++;
-			cout << " " << count << "       " << record_id[i] << "        " << record_name[i] << endl;
+			cout << " " << count << "        " << record_id[i] << "        " << record_name[i] << endl;
 		}
 	}
 
@@ -131,7 +155,7 @@ void DisplayRecord()
 		if (record_id[i] != "\0")
 		{
 			count++;
-			cout << " " << count << "       " << record_id[i] << "        " << record_name[i] << endl;
+			cout << " " << count << "        " << record_id[i] << "        " << record_name[i] << endl;
 		}
 	}
 
@@ -140,11 +164,31 @@ void DisplayRecord()
 	cout << endl;
 }
 
+void SaveToFile()
+{
+	ofstream file;
+	file.open("Records.txt");
+
+	for (int i = 0; i < 100; i++)
+	{
+		if (record_id[i] == "\0")
+		{
+			break;
+		}
+
+		else
+		{
+			file << record_id[i] + "," + record_name[i] << endl;
+		}
+	}
+}
+
 void MainProgram()
 {
 	int option;
 	string input_id;
 	system("CLS");
+	OpenFile();
 
 	do {
 		cout << "=======================" << endl;
@@ -158,7 +202,7 @@ void MainProgram()
 		cout << " 6 - Return and save" << endl << endl;
 		cout << "=======================" << endl << endl;
 
-		cout << endl << "Select >> ";
+		cout << "Select >> ";
 		option = inputChoiceProgramme();
 
 		switch (option)
@@ -196,6 +240,9 @@ void MainProgram()
 			break;
 
 		case 6:
+			SaveToFile();
+			system("CLS");
+			printMenu();
 			break;
 		}
 	} while (option);
