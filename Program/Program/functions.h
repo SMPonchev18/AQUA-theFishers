@@ -21,3 +21,5 @@ void SaveToFile();
 void MainProgram();
 
 int inputChoiceProgramme();
+
+bool idCheck(string id);

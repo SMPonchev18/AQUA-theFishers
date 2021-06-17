@@ -38,11 +38,23 @@ void CreateRecord()
 {
 	char id[5];
 	char name[50];
+	bool check = false;
 
 	cin.ignore();
 
 	cout << "Enter record ID >> ";
-	cin.getline(id, 5);
+
+	while (!check)
+	{
+		cin.getline(id, 5);
+		check = idCheck(id);
+
+		if (!check)
+		{
+			cout << "ID must be made out of 4 symbols!" << endl;
+			cout << "Enter record ID >> ";
+		}
+	}
 
 	cout << "Enter record name >> ";
 	cin.getline(name, 50);
@@ -281,4 +293,14 @@ int inputChoiceProgramme()
 	}
 
 	return user_choice;
+}
+
+bool idCheck(string id)
+{
+	if (id.size() != 4)
+	{
+		return false;
+	}
+
+	return true;
 }
