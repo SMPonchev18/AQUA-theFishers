@@ -201,7 +201,7 @@ void MainProgramme()
 	} while (option);
 }
 
-int inputChoiceProgramme()   // Allows the user to input their operation of choice
+int inputChoiceProgramme()
 {
 	int user_choice;
 	bool check_num = false;
