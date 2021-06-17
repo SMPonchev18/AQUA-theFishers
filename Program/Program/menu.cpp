@@ -67,7 +67,7 @@ void choice(int user_choice)
     switch (user_choice)
     {
     case 1:
-        MainProgramme();
+        MainProgram();
         break;
 
     case 2:
@@ -77,15 +77,17 @@ void choice(int user_choice)
         break;
 
     case 4:
-        printTeamInfo();
+        printTeamInformation();
         break;
 
     case 5:
+        system("CLS");
+        cout << "Thank you for using our program! :)" << endl; 
         exit(0);
     }
 }
 
-void printTeamInfo()
+void printTeamInformation()
 {
     cout << "========================================================================================" << endl;
     cout << "                                    TEAM INFORMATION" << endl;
@@ -101,6 +103,37 @@ void printTeamInfo()
     cout << "      Stoyan Ponchev - 10G - SQL" << endl << endl;
     cout << " Thank you for using our program! We hope you like it!" << endl << endl;
 
-    /* cout << " Would you like to go back to the menu? - Y/N" << endl;
-    cout << " Your choice: "; */
+    cout << " Would you like to go back to the menu? - Y/N" << endl;
+    cout << " Select >> ";
+
+    returnToMenu();
+}
+
+void returnToMenu() 
+{
+    char answer;
+    bool flag = false;
+
+    while (flag == false)
+    {
+        cin >> answer;
+
+        if (answer == 'Y' || answer == 'y') 
+        {
+            system("CLS"); 
+            printMenu(); 
+        }
+
+        else if (answer == 'N' || answer == 'n')
+        {
+            exit(0);
+        }
+
+        else
+        {
+            cin.ignore(1000, '\n');
+            cout << endl << "You entered an invalid operation. Please try again." << endl;
+            cout << "Select >> ";
+        }
+    }
 }

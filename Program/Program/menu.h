@@ -8,4 +8,6 @@ int inputChoice();
 
 void choice(int user_choice);
 
-void printTeamInfo();
+void printTeamInformation();
+
+void returnToMenu();

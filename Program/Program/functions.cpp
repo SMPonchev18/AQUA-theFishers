@@ -7,21 +7,64 @@
 
 using namespace std;
 
-
 string record_id[100] = {};
 string record_name[100] = {};
 
+void OpenFile()
+{
+	string line;
+	ifstream file("Records.txt");
+
+	if (file.is_open())
+	{
+		int i = 0;
+
+		while (getline(file, line))
+		{
+			size_t j = line.size();
+			record_id[i] = line.substr(0, 4);
+			record_name[i] = line.substr(5, j - 5);
+			i++;
+		}
+	}
+
+	else
+	{
+		cout << "Enable to open the file!" << endl;
+	}
+}
+
 void CreateRecord()
 {
-	char id[5];
+	char id[100];
 	char name[50];
+	bool check = false;
+	bool check2 = false;
 
 	cin.ignore();
 
-	cout << "Enter record ID >> ";
-	cin.getline(id, 5);
+	cout << endl  << "Enter record ID >> ";
 
-	cout << "Enter record name >> ";
+	while (!check || !check2)
+	{
+		cin.getline(id, 100);
+		check = idCheck(id);
+		check2 = idAlreadyExist(id);
+
+		if (!check)
+		{
+			cout << endl << "ID must be made out of 4 symbols!" << endl << endl;
+			cout << "Enter record ID >> ";
+		}
+
+		if (!check2)
+		{
+			cout << endl << "This ID already exists!" << endl << endl;
+			cout << "Enter record ID >> ";
+		}
+	}
+
+	cout << endl << "Enter record name >> ";
 	cin.getline(name, 50);
 
 	for (int i = 0; i < 100; i++)
@@ -35,24 +78,81 @@ void CreateRecord()
 	}
 }
 
+void UpdateRecord(string search)
+{
+	char name[50];
+
+	int counter = 0;
+
+	for (int i = 0; i < 100; i++)
+	{
+		if (record_id[i] == search)
+		{
+			counter++;
+
+			cout << "Enter new record name >> ";
+			cin.getline(name, 50);
+			system("CLS");
+
+			record_name[i] = name;
+
+			cout << "Update successful!" << endl;
+			break;
+		}
+	}
+
+	if (counter == 0)
+	{
+		system("CLS");
+		cout << "Record doesn't exist!" << endl;
+	}
+}
+
+void DeleteRecord(string search)
+{
+	int count = 0;
+
+	for (int i = 0; i < 100; i++)
+	{
+		if (record_id[i] == search)
+		{
+			count++;
+
+			record_name[i] = "";
+			record_id[i] = "";
+
+			system("CLS");
+
+			cout << "Successfully deleted!" << endl;
+			break;
+		}
+	}
+
+	if (count == 0)
+	{
+		system("CLS");
+		cout << "ID doesn't exist!" << endl;
+	}
+}
+
 void SearchRecord(string search)
 {
 	cout << "==============================" << endl;
 	cout << "      Current Record(s)" << endl;
 	cout << "==============================" << endl;
 
-	int number = 0;
+	int count = 0;
 
 	for (int i = 0; i < 100; i++)
 	{
 		if (record_id[i] == search)
 		{
-			number++;
-			cout << " " << number << "       " << record_id[i] << "        " << record_name[i] << endl;
+			count++;
+			cout << " " << count << "        " << record_id[i] << "      " << record_name[i] << endl;
 		}
 	}
 
-	if (number == 0)
+	if (count == 0)
 	{
 		cout << "No Record found!" << endl;
 	}
@@ -62,7 +162,7 @@ void SearchRecord(string search)
 
 void DisplayRecord()
 {
-	int number = 0;
+	int count = 0;
 
 	cout << "==============================" << endl;
 	cout << "      Current Record(s)" << endl;
@@ -74,8 +174,8 @@ void DisplayRecord()
 	{
 		if (record_id[i] != "\0")
 		{
-			number++;
-			cout << " " << number << "       " << record_id[i] << "        " << record_name[i] << endl;
+			count++;
+			cout << " " << count << "        " << record_id[i] << "      " << record_name[i] << endl;
 		}
 	}
 
@@ -84,11 +184,31 @@ void DisplayRecord()
 	cout << endl;
 }
 
-void MainProgramme()
+void SaveToFile()
+{
+	ofstream file;
+	file.open("Records.txt");
+
+	for (int i = 0; i < 100; i++)
+	{
+		if (record_id[i] == "\0")
+		{
+			break;
+		}
+
+		else
+		{
+			file << record_id[i] + "," + record_name[i] << endl;
+		}
+	}
+}
+
+void MainProgram()
 {
 	int option;
 	string input_id;
 	system("CLS");
+	OpenFile();
 
 	do {
 		cout << "=======================" << endl;
@@ -102,7 +222,7 @@ void MainProgramme()
 		cout << " 6 - Return and save" << endl << endl;
 		cout << "=======================" << endl << endl;
 
-		cout << endl << "Select >> ";
+		cout << "Select >> ";
 		option = inputChoiceProgramme();
 
 		switch (option)
@@ -113,9 +233,17 @@ void MainProgramme()
 			break;
 
 		case 2:
+			cin.ignore();
+			cout << endl << "Search by ID >> ";
+			getline(cin, input_id);
+			UpdateRecord(input_id);
 			break;
 
 		case 3:
+			cin.ignore();
+			cout << endl << "Delete by ID >> ";
+			getline(cin, input_id);
+			DeleteRecord(input_id);
 			break;
 
 		case 4:
@@ -132,12 +260,15 @@ void MainProgramme()
 			break;
 
 		case 6:
+			SaveToFile();
+			system("CLS");
+			printMenu();
 			break;
 		}
 	} while (option);
 }
 
-int inputChoiceProgramme()   // Allows the user to input their operation of choice
+int inputChoiceProgramme()
 {
 	int user_choice;
 	bool check_num = false;
@@ -170,4 +301,31 @@ int inputChoiceProgramme()   // Allows the user to input their operation of choi
 	}
 
 	return user_choice;
+}
+
+bool idCheck(string id)
+{
+	if (id.size() != 4)
+	{
+		return false;
+	}
+
+	return true;
+}
+
+bool idAlreadyExist(string id)
+{
+	for (int i = 0; i < 100; i++)
+	{
+		if (record_id[i] == id)
+		{
+			return false;
+		}
+		if (record_id[i] == "\0")
+		{
+			break;
+		}
+	}
+
+	return true;
 }
