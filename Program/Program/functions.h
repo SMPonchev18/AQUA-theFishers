@@ -6,6 +6,8 @@ using namespace std;
 
 void CreateRecord();
 
+void UpdateRecord(string search);
+
 void SearchRecord(string search);
 
 void DisplayRecord();

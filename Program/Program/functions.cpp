@@ -35,24 +35,54 @@ void CreateRecord()
 	}
 }
 
+void UpdateRecord(string search)
+{
+	char name[50];
+
+	int counter = 0;
+
+	for (int i = 0; i < 100; i++)
+	{
+		if (record_id[i] == search)
+		{
+			counter++;
+
+			cout << "Enter new record name >> ";
+			cin.getline(name, 50);
+			system("CLS");
+
+			record_name[i] = name;
+
+			cout << "Update successful!" << endl;
+			break;
+		}
+	}
+
+	if (counter == 0)
+	{
+		system("CLS");
+		cout << "Record doesn't exist!" << endl;
+	}
+}
+
 void SearchRecord(string search)
 {
 	cout << "==============================" << endl;
 	cout << "      Current Record(s)" << endl;
 	cout << "==============================" << endl;
 
-	int number = 0;
+	int count = 0;
 
 	for (int i = 0; i < 100; i++)
 	{
 		if (record_id[i] == search)
 		{
-			number++;
-			cout << " " << number << "       " << record_id[i] << "        " << record_name[i] << endl;
+			count++;
+			cout << " " << count << "       " << record_id[i] << "        " << record_name[i] << endl;
 		}
 	}
 
-	if (number == 0)
+	if (count == 0)
 	{
 		cout << "No Record found!" << endl;
 	}
@@ -62,7 +92,7 @@ void SearchRecord(string search)
 
 void DisplayRecord()
 {
-	int number = 0;
+	int count = 0;
 
 	cout << "==============================" << endl;
 	cout << "      Current Record(s)" << endl;
@@ -74,8 +104,8 @@ void DisplayRecord()
 	{
 		if (record_id[i] != "\0")
 		{
-			number++;
-			cout << " " << number << "       " << record_id[i] << "        " << record_name[i] << endl;
+			count++;
+			cout << " " << count << "       " << record_id[i] << "        " << record_name[i] << endl;
 		}
 	}
 
@@ -113,6 +143,10 @@ void MainProgramme()
 			break;
 
 		case 2:
+			cin.ignore();
+			cout << endl << "Search by ID >> ";
+			getline(cin, input_id);
+			UpdateRecord(input_id);
 			break;
 
 		case 3:
