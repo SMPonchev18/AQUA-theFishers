@@ -1,17 +1,13 @@
 #firstBox{
    border-style:solid;
-}
-#aquaTitle{
-    width: 75%;
-    height:25%;
-    margin:auto;
-    margin-top:3rem;
+   background-color: #1e2c4a;
 }
 h2{
 	position: absolute;
-	font-size: 13rem;
+	font-size: 20rem;
     margin-left:15rem;
-    margin-top:-1.5rem;
+	margin-top:15rem;
+	font-family: 'Poppins', sans-serif;;
 }
 #supportTitle{
 	color: transparent;
