@@ -14,6 +14,6 @@ void SearchRecord(string search);
 
 void DisplayRecord();
 
-void MainProgramme();
+void MainProgram();
 
 int inputChoiceProgramme();

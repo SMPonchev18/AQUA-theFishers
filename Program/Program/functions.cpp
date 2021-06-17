@@ -140,7 +140,7 @@ void DisplayRecord()
 	cout << endl;
 }
 
-void MainProgramme()
+void MainProgram()
 {
 	int option;
 	string input_id;
