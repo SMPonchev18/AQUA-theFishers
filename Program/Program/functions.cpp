@@ -7,8 +7,8 @@
 
 using namespace std;
 
-string record_id[100] = {};
-string record_name[100] = {};
+string record_id[1000] = {};
+string record_name[1000] = {};
 
 void OpenFile()
 {
@@ -67,7 +67,7 @@ void CreateRecord()
 	cout << endl << "Enter record name >> ";
 	cin.getline(name, 50);
 
-	for (int i = 0; i < 100; i++)
+	for (int i = 0; i < 1000; i++)
 	{
 		if (record_id[i] == "\0")
 		{
@@ -84,7 +84,7 @@ void UpdateRecord(string search)
 
 	int counter = 0;
 
-	for (int i = 0; i < 100; i++)
+	for (int i = 0; i < 1000; i++)
 	{
 		if (record_id[i] == search)
 		{
@@ -112,7 +112,7 @@ void DeleteRecord(string search)
 {
 	int count = 0;
 
-	for (int i = 0; i < 100; i++)
+	for (int i = 0; i < 1000; i++)
 	{
 		if (record_id[i] == search)
 		{
@@ -143,7 +143,7 @@ void SearchRecord(string search)
 
 	int count = 0;
 
-	for (int i = 0; i < 100; i++)
+	for (int i = 0; i < 1000; i++)
 	{
 		if (record_id[i] == search)
 		{
@@ -170,7 +170,7 @@ void DisplayRecord()
 	cout << " No.   |   Id   |     Name     " << endl;
 	cout << "------------------------------" << endl;
 
-	for (int i = 0; i < 100; i++)
+	for (int i = 0; i < 1000; i++)
 	{
 		if (record_id[i] != "\0")
 		{
@@ -189,7 +189,7 @@ void SaveToFile()
 	ofstream file;
 	file.open("Records.txt");
 
-	for (int i = 0; i < 100; i++)
+	for (int i = 0; i < 1000; i++)
 	{
 		if (record_id[i] == "\0")
 		{
@@ -315,7 +315,7 @@ bool idCheck(string id)
 
 bool idAlreadyExist(string id)
 {
-	for (int i = 0; i < 100; i++)
+	for (int i = 0; i < 1000; i++)
 	{
 		if (record_id[i] == id)
 		{
