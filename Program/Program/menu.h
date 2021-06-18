@@ -8,6 +8,8 @@ int inputChoice();
 
 void choice(int user_choice);
 
+void printEndangeredSpecies();
+
 void printTeamInformation();
 
 void returnToMenu();
