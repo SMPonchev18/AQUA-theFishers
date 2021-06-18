@@ -211,16 +211,16 @@ void MainProgram()
 	OpenFile();
 
 	do {
-		cout << "=======================" << endl;
-		cout << "        OPTIONS" << endl;
-		cout << "=======================" << endl << endl;
-		cout << " 1 - Create" << endl;
-		cout << " 2 - Update" << endl;
-		cout << " 3 - Delete" << endl;
+		cout << "=========================" << endl;
+		cout << "         OPTIONS         " << endl;
+		cout << "=========================" << endl << endl;
+		cout << " 1 - Create Record" << endl;
+		cout << " 2 - Update Record" << endl;
+		cout << " 3 - Delete Record" << endl;
 		cout << " 4 - Search by ID" << endl;
-		cout << " 5 - Display" << endl;
-		cout << " 6 - Return and save" << endl << endl;
-		cout << "=======================" << endl << endl;
+		cout << " 5 - Display Record(s)" << endl;
+		cout << " 6 - Return and Save" << endl << endl;
+		cout << "=========================" << endl << endl;
 
 		cout << "Select >> ";
 		option = inputChoiceProgramme();
