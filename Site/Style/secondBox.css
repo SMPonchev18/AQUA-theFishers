@@ -34,11 +34,15 @@
     background-image: url("../Images/FirstTopWaveImage.png");
     background-repeat: no-repeat;
     background-size: cover;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
 }
 #FirstBottomWaveImage{
     background-image: url("../Images/FirstBottomWaveImage.png");
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
 }
 
 
@@ -47,16 +51,29 @@
     background-image: url("../Images/SecondTopWaveImage.png");
     background-repeat: no-repeat;
     background-size: cover;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
 }
 #SecondBottomWaveImage{
-    background-image: url("../Images/FirstTopWaveImage.png");
+    background-image: url("../Images/SecondBottomWaveImage.png");
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
 }
 
 
 #ThirdTopWaveImage{
-    background-image: url("../Images/FirstTopWaveImage.png");
+    background-image: url("../Images/ThirdTopWaveImage.png");
     background-repeat: no-repeat;
     background-size: cover;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+}
+#ThirdBottomWaveImage{
+    background-image: url("../Images/ThirdBottomWaveImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
 }
