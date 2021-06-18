@@ -71,6 +71,7 @@ void choice(int user_choice)
         break;
 
     case 2:
+        printEndangeredSpecies();
         break;
 
     case 3:
@@ -85,6 +86,40 @@ void choice(int user_choice)
         cout << "Thank you for using our program! :)" << endl; 
         exit(0);
     }
+}
+
+void printEndangeredSpecies()
+{
+    cout << "=============================================================" << endl;
+    cout << "                      PROTECTED SPECIES                      " << endl;
+    cout << "=============================================================" << endl;
+    cout << "            ANIMAL            |            STATUS            " << endl;
+    cout << "-------------------------------------------------------------" << endl;
+    cout << "          Sea Turtle          |          Endangered" << endl;
+    cout << "            Vaquita           |     Critically Endangered" << endl;
+    cout << "          White Shark         |          Endangered" << endl;
+    cout << "            Dugong            |          Vulnerable" << endl;
+    cout << "        Humphead Wrasse       |          Endangered" << endl;
+    cout << "            Whales            |          Endangered" << endl;
+    cout << "          Sea Lions           |          Endangered" << endl;
+    cout << "         Marine Iguana        |          Vulnerable" << endl;
+    cout << "         Bluefin Tuna         |          Endangered" << endl;
+    cout << "        Yellowfin Tuna        |     Critically Endangered" << endl;
+    cout << "       Hawksbill Turtle       |     Critically Endangered" << endl;
+    cout << "      Loggerhead Turtle       |          Vulnerable" << endl;
+    cout << "      Leatherback Turtle      |          Vulnerable" << endl;
+    cout << "         Green Turtle         |          Endangered" << endl;
+    cout << "      Olive Ridley Turtle     |          Vulnerable" << endl;
+    cout << "       Hector's Dolphin       |          Endangered" << endl;
+    cout << "      Galápagos Penguin       |          Endangered" << endl;
+    cout << "           Narwhal            |          Vulnerable" << endl;
+    cout << "           Beluga             |          Vulnerable" << endl;
+    cout << "=============================================================" << endl << endl;
+
+    cout << " Would you like to go back to the menu? - Y/N" << endl << endl;
+    cout << " Select >> ";
+
+    returnToMenu();
 }
 
 void printTeamInformation()
@@ -102,8 +137,9 @@ void printTeamInformation()
     cout << "      Petar Petkov - 10G - SQL" << endl;
     cout << "      Stoyan Ponchev - 10G - SQL" << endl << endl;
     cout << " Thank you for using our program! We hope you like it!" << endl << endl;
+    cout << "========================================================================================" << endl << endl;
 
-    cout << " Would you like to go back to the menu? - Y/N" << endl;
+    cout << " Would you like to go back to the menu? - Y/N" << endl << endl;
     cout << " Select >> ";
 
     returnToMenu();
