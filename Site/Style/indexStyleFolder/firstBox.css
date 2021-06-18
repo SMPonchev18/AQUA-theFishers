@@ -1,22 +1,25 @@
 h2{
 	position: absolute;
-	font-size: 20rem;
-    margin-left:15rem;
+	font-size: 23rem;
+    margin-left:12rem;
 	margin-top:-3rem;
-	font-family: 'Poppins', sans-serif;;
+	font-family: 'Poppins', sans-serif;
+	
 }
 #supportTitle{
 	color: transparent;
-	-webkit-text-stroke: 2px #03a9f4;
+	-webkit-text-stroke: 2px #0691ce;
 }
 #mainTitle{
-	color: #03a9f4;
-	animation-name: animate;
+	background:-webkit-linear-gradient(#0dd0e4,#095d9c);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+	animation-name: animatedWave;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function:ease-in-out;
 }
-@keyframes animate
+@keyframes animatedWave
 { 
 	0%,100%
 	{
