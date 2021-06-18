@@ -1,0 +1,62 @@
+#divForTheThreeCards{
+    width:100%;
+    height:55%;
+    border-style:solid;
+}
+.cards{
+    width:20%;
+    height:90%;
+    display:inline-block;
+    margin-top:1.5rem;
+    margin-left:9rem;
+    box-shadow: 3px 3px 20px grey;
+    border-radius: 0.625rem;
+}
+.topWaveTemplate{
+    width:100%;
+    height:20%;
+}
+
+.content{
+    width:100%;
+    height:60%;
+    border-style:solid;
+}
+
+.bottomWaveTemplate{
+    width:100%;
+    height:20%;
+}
+
+
+
+#FirstTopWaveImage{
+    background-image: url("../Images/FirstTopWaveImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#FirstBottomWaveImage{
+    background-image: url("../Images/FirstBottomWaveImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+#SecondTopWaveImage{
+    background-image: url("../Images/SecondTopWaveImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#SecondBottomWaveImage{
+    background-image: url("../Images/FirstTopWaveImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#ThirdTopWaveImage{
+    background-image: url("../Images/FirstTopWaveImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

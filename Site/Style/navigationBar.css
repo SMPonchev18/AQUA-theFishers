@@ -21,7 +21,7 @@
 	height:25%;
 }
 #logo{
-	background-image: url('../../Icons/logo.jpg');
+	background-image: url('../Icons/logo.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	width:100%;
