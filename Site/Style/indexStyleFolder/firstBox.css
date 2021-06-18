@@ -1,12 +1,12 @@
 #firstBox{
    border-style:solid;
-   background-color: #1e2c4a;
 }
+
 h2{
 	position: absolute;
 	font-size: 20rem;
     margin-left:15rem;
-	margin-top:15rem;
+	margin-top:-3rem;
 	font-family: 'Poppins', sans-serif;;
 }
 #supportTitle{
