@@ -10,7 +10,7 @@ using namespace std;
 string record_id[1000] = {};
 string record_name[1000] = {};
 
-void OpenFile()
+void openFile()
 {
 	string line;
 	ifstream file("Records.txt");
@@ -34,7 +34,7 @@ void OpenFile()
 	}
 }
 
-void CreateRecord()
+void createRecord()
 {
 	char id[100];
 	char name[50];
@@ -78,7 +78,7 @@ void CreateRecord()
 	}
 }
 
-void UpdateRecord(string search)
+void updateRecord(string search)
 {
 	char name[50];
 
@@ -108,7 +108,7 @@ void UpdateRecord(string search)
 	}
 }
 
-void DeleteRecord(string search)
+void deleteRecord(string search)
 {
 	int count = 0;
 
@@ -135,7 +135,7 @@ void DeleteRecord(string search)
 	}
 }
 
-void SearchRecord(string search)
+void searchRecord(string search)
 {
 	cout << "==============================" << endl;
 	cout << "      Current Record(s)" << endl;
@@ -160,7 +160,7 @@ void SearchRecord(string search)
 	cout << "------------------------------" << endl << endl;
 }
 
-void DisplayRecord()
+void displayRecord()
 {
 	int count = 0;
 
@@ -184,7 +184,7 @@ void DisplayRecord()
 	cout << endl;
 }
 
-void SaveToFile()
+void saveToFile()
 {
 	ofstream file;
 	file.open("Records.txt");
@@ -203,12 +203,12 @@ void SaveToFile()
 	}
 }
 
-void MainProgram()
+void mainProgram()
 {
 	int option;
 	string input_id;
 	system("CLS");
-	OpenFile();
+	openFile();
 
 	do {
 		cout << "=========================" << endl;
@@ -228,7 +228,7 @@ void MainProgram()
 		switch (option)
 		{
 		case 1:
-			CreateRecord();
+			createRecord();
 			system("CLS");
 			break;
 
@@ -236,14 +236,14 @@ void MainProgram()
 			cin.ignore();
 			cout << endl << "Search by ID >> ";
 			getline(cin, input_id);
-			UpdateRecord(input_id);
+			updateRecord(input_id);
 			break;
 
 		case 3:
 			cin.ignore();
 			cout << endl << "Delete by ID >> ";
 			getline(cin, input_id);
-			DeleteRecord(input_id);
+			deleteRecord(input_id);
 			break;
 
 		case 4:
@@ -251,16 +251,16 @@ void MainProgram()
 			cout << endl << "Search by ID >> ";
 			getline(cin, input_id);
 			system("CLS");
-			SearchRecord(input_id);
+			searchRecord(input_id);
 			break;
 
 		case 5:
 			system("ClS");
-			DisplayRecord();
+			displayRecord();
 			break;
 
 		case 6:
-			SaveToFile();
+			saveToFile();
 			system("CLS");
 			printMenu();
 			break;

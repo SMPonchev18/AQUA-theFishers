@@ -4,21 +4,21 @@
 
 using namespace std;
 
-void OpenFile();
+void openFile();
 
-void CreateRecord();
+void createRecord();
 
-void UpdateRecord(string search);
+void updateRecord(string search);
 
-void DeleteRecord(string search);
+void deleteRecord(string search);
 
-void SearchRecord(string search);
+void searchRecord(string search);
 
-void DisplayRecord();
+void displayRecord();
 
-void SaveToFile();
+void saveToFile();
 
-void MainProgram();
+void mainProgram();
 
 int inputChoiceProgramme();
 
