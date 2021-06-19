@@ -1,0 +1,15 @@
+#mainImage{
+    width:100%;
+    height:82%;
+    background-image: url("../../Images/mianImage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#theMainImage{
+    color:white;
+    text-align:center;
+    font-size:6rem;
+    font-family: 'Nunito', sans-serif;
+    padding-top:10rem;
+}
