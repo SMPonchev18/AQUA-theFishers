@@ -3,15 +3,15 @@
 ### Team: TheFishers
 
 ## 💻 Team members:
-* Zhivko Spasov - 8G - HTML/CSS - ZZSpasov20@codingburgas.bg
-* Soner Solakov - 8A - HTML/CSS - SYSolakov20@codingburgas.bg
-* Alexandra Staykova - 9V - JavaScript - ASStaykova19@codingburgas.bg
-* Tereza Opanska - 9V - C++ - TNOpanska19@codingburgas.bg
-* Petar Petkov - 10G - SQL - PGPetkov18@codingburgas.bg
-* Stoyan Ponchev - 10G - SQL - SMPonchev18@codingburgas.bg
+* Zhivko Spasov - 8G - HTML Developer - ZZSpasov20@codingburgas.bg
+* Soner Solakov - 8A - CSS Developer - SYSolakov20@codingburgas.bg
+* Alexandra Staykova - 9V - JavaScript Developer - ASStaykova19@codingburgas.bg
+* Tereza Opanska - 9V - C++ Developer - TNOpanska19@codingburgas.bg
+* Petar Petkov - 10G - SQL Developer - PGPetkov18@codingburgas.bg
+* Stoyan Ponchev - 10G - SQL Developer - SMPonchev18@codingburgas.bg
 
 ## 📖 Project description:
-This is our repo for the Collaboration Team Project - AQUA. We are making a program that will help people working with marine wildlife and a website for the application.
+This is our repository for the Collaboration Team Project - AQUA. We are making a program that will help people working with marine wildlife and a website for the application.
 
 ## ⚙️ Installation
 ```
