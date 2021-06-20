@@ -131,7 +131,7 @@ void printUsage()
     cout << " By choosing 1 on the main menu, you're taken to a second menu where you can" << endl;
     cout << "see the different things you can do with records." << endl;
     cout << " By creating records, you can keep track of the marine wildlife and make sure" << endl; 
-    cout << "species aren't going extinct." << endl;
+    cout << "species aren't going extinct." << endl << endl;
     cout << "   Choosing option 1 you are allowed to create a new record, by inputing an ID" << endl; 
     cout << "  for it and entering the name of the animal that the record is for." << endl;
     cout << "   Choosing option 2 you are allowed to update an already existing record in" << endl;
@@ -146,7 +146,11 @@ void printUsage()
     cout << " By choosing 2 on the main menu you get taken to a list of endangered animals." << endl;
     cout << "This option is mainly for edicational purposes and cannot be edited by the user." << endl << endl;
 
-    cout << " By choosing 3 you get taken to the information you are reading now." << endl << endl;
+    cout << " By choosing 3 you get taken to the information you are reading now." << endl;
+
+    cout << " By choosing 4 you get taken to the information about our team." << endl;
+
+    cout << " By choosing 5 you can exit the program." << endl;
     /* Continue text */
 }
 
