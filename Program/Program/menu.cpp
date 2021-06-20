@@ -25,7 +25,7 @@ void printMenu()
     choice(inputChoice());
 }
 
-int inputChoice()
+int inputChoice()   // Takes the user's choice
 {
     int user_choice;
     bool check_num = false;
@@ -60,7 +60,7 @@ int inputChoice()
     return user_choice;
 }
 
-void choice(int user_choice)
+void choice(int user_choice)    // Takes the user to the different operations depending on their choice
 {
     system("CLS");
 
@@ -191,18 +191,18 @@ void returnToMenu()
     {
         cin >> answer;
 
-        if (answer == 'Y' || answer == 'y') 
+        if (answer == 'Y' || answer == 'y') // User wants to return to the menu
         {
             system("CLS"); 
             printMenu(); 
         }
 
-        else if (answer == 'N' || answer == 'n')
+        else if (answer == 'N' || answer == 'n')    // User wants to exit the program
         {
             exit(0);
         }
 
-        else
+        else    // Incorrect input
         {
             cin.ignore(1000, '\n');
             cout << endl << "You entered an invalid operation. Please try again." << endl;

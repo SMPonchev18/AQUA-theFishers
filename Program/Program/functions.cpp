@@ -10,12 +10,12 @@ using namespace std;
 string record_id[1000] = {};
 string record_name[1000] = {};
 
-void openFile()
+void openFile()	// Starts reading the Records.txt file so it can input information into it
 {
 	string line;
 	ifstream file("Records.txt");
 
-	if (file.is_open())
+	if (file.is_open())	// The file is successfully opened
 	{
 		int i = 0;
 
@@ -28,7 +28,7 @@ void openFile()
 		}
 	}
 
-	else
+	else	// There is a problem with the file
 	{
 		cout << "Enable to open the file!" << endl;
 	}
@@ -45,19 +45,19 @@ void createRecord()
 
 	cout << endl  << "Enter record ID >> ";
 
-	while (!check || !check2)
+	while (!check || !check2)	// Checks the entered ID
 	{
 		cin.getline(id, 100);
 		check = idCheck(id);
 		check2 = idAlreadyExist(id);
 
-		if (!check)
+		if (!check)		// ID isn't made out of 4 symbols
 		{
 			cout << endl << "ID must be made out of 4 symbols!" << endl << endl;
 			cout << "Enter record ID >> ";
 		}
 
-		if (!check2)
+		if (!check2)	// ID already exists
 		{
 			cout << endl << "This ID already exists!" << endl << endl;
 			cout << "Enter record ID >> ";
@@ -67,7 +67,7 @@ void createRecord()
 	cout << endl << "Enter record name >> ";
 	cin.getline(name, 50);
 
-	for (int i = 0; i < 1000; i++)
+	for (int i = 0; i < 1000; i++)	// Adds the record information into the global arrays
 	{
 		if (record_id[i] == "\0")
 		{
@@ -101,7 +101,7 @@ void updateRecord(string search)
 		}
 	}
 
-	if (counter == 0)
+	if (counter == 0)	// The user entered a non-existing ID
 	{
 		system("CLS");
 		cout << "Record doesn't exist!" << endl;
@@ -128,7 +128,7 @@ void deleteRecord(string search)
 		}
 	}
 
-	if (count == 0)
+	if (count == 0)	// The user entered a non-existing ID
 	{
 		system("CLS");
 		cout << "ID doesn't exist!" << endl;
@@ -145,14 +145,14 @@ void searchRecord(string search)
 
 	for (int i = 0; i < 1000; i++)
 	{
-		if (record_id[i] == search)
+		if (record_id[i] == search)	// ID matches a records ID
 		{
 			count++;
 			cout << " " << count << "        " << record_id[i] << "      " << record_name[i] << endl;
 		}
 	}
 
-	if (count == 0)
+	if (count == 0)	// The user entered a non-existing ID
 	{
 		cout << "No Record found!" << endl;
 	}
@@ -191,12 +191,12 @@ void saveToFile()
 
 	for (int i = 0; i < 1000; i++)
 	{
-		if (record_id[i] == "\0")
+		if (record_id[i] == "\0")	// No more records left to be written in the file
 		{
 			break;
 		}
 
-		else
+		else	// Writes the new record into the file 
 		{
 			file << record_id[i] + "," + record_name[i] << endl;
 		}
@@ -303,9 +303,9 @@ int inputChoiceProgramme()
 	return user_choice;
 }
 
-bool idCheck(string id)
+bool idCheck(string id)		// Checks if ID is made out of 4 symbols
 {
-	if (id.size() != 4)
+	if (id.size() != 4)	
 	{
 		return false;
 	}
@@ -313,7 +313,7 @@ bool idCheck(string id)
 	return true;
 }
 
-bool idAlreadyExist(string id)
+bool idAlreadyExist(string id)	// Checks if ID already exists
 {
 	for (int i = 0; i < 1000; i++)
 	{
