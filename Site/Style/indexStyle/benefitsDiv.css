@@ -8,7 +8,6 @@
     height:70%;
     float:left;
     margin-top:6rem;
-    border-style:solid;
 }
 #titleOfBEnefits{
     font-family: 'Nunito', sans-serif;
@@ -21,7 +20,6 @@
     height:70%;
     float:right;
     margin-top:6rem;
-    border-style:solid;
 }
 .figureBoxTemplate{
     width:28%;
@@ -52,36 +50,4 @@
 }
 .figureBoxTemplate:hover .divWithHover{
     transform: translateY(-100%) scale(1);
-}
-
-
-#mainDiv{
-    width:100%;
-    height:100%;
-    background-color: red;
-    transition: 0.5s; 
-    position: absolute;
-}
-#secondaryDiv{
-    width:100%;
-    height:100%;
-    background-color: blue;
-    transition: 0.5s;
-    position: absolute;
-    transform:scale(0);
-}
-#mainMain{
-    width:20%;
-    height:30%;
-    position: absolute;
-}
-#mainMain:hover #mainDiv{
-    transform:scale(0);
-}
-#mainMain:hover #secondaryDiv{
-    transform:scale(1);
-}
-#aaa{
-    color:white;
-    font-size:3rem;
 }
