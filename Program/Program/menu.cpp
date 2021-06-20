@@ -167,7 +167,7 @@ void printTeamInformation()
     cout << " Hello! Our team is TheFishers!" << endl;
     cout << " We are students from PGKPI. This is our program for the colaborative project AQUA." << endl << endl;
     cout << " Here are our names and tasks in this project:" << endl << endl;
-    cout << "      Zjivko Spasov - 8G - HTML/CSS" << endl;
+    cout << "      Zhivko Spasov - 8G - HTML/CSS" << endl;
     cout << "      Soner Solakov - 8A - HTML/CSS" << endl;
     cout << "      Alexandra Staykova - 9V - JavaScript" << endl;
     cout << "      Tereza Opanska - 9V - C++" << endl;
