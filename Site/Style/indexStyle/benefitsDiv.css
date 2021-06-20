@@ -49,20 +49,18 @@
     transform: scale(0);
 }
 .figureBoxTemplate:hover .divWithHover{
-    transform: translateY(-100%) scale(1);
+    transform: translateY(-110%) scale(1);
 }
-#firstFigure{
-    background-image:url("../../Icons/circleIcon.png") ;
-    background-repeat: no-repeat;
-    background-size: cover;
+.imageIndivWithoutHover{
+    width:90%;
+    height:90%;
+    margin-top:1rem;
+    margin-left:1rem;
 }
-#secondFigure{
-    background-image:url("../../Icons/girlIcon.png") ;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#ThirdFigure{
-    background-image:url("../../Icons/worldIcon.png") ;
-    background-repeat: no-repeat;
-    background-size: cover;
+.textInDivWithHover{
+    color:black;
+    font-family: 'Nunito', sans-serif;
+    font-size:3rem;
+    text-align:center;
+    padding-top:6rem;
 }
