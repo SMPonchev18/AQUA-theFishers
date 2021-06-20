@@ -155,6 +155,8 @@ void printUsage()
 
     cout << " Would you like to go back to the menu? - Y/N" << endl << endl;
     cout << " Select >> ";
+
+    returnToMenu();
 }
 
 void printTeamInformation()
