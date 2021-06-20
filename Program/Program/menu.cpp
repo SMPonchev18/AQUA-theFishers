@@ -71,7 +71,7 @@ void choice(int user_choice)
         break;
 
     case 2:
-        printEndangeredSpecies();
+        printSpecies();
         break;
 
     case 3:
@@ -89,7 +89,7 @@ void choice(int user_choice)
     }
 }
 
-void printEndangeredSpecies()
+void printSpecies()
 {
     cout << "=============================================================" << endl;
     cout << "                      PROTECTED SPECIES                      " << endl;
