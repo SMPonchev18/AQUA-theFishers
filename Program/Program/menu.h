@@ -8,7 +8,9 @@ int inputChoice();
 
 void choice(int user_choice);
 
-void printEndangeredSpecies();
+void printSpecies();
+
+void printUsage();
 
 void printTeamInformation();
 
