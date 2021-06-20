@@ -10,6 +10,8 @@ void choice(int user_choice);
 
 void printEndangeredSpecies();
 
+void printUsage();
+
 void printTeamInformation();
 
 void returnToMenu();

@@ -75,6 +75,7 @@ void choice(int user_choice)
         break;
 
     case 3:
+        printUsage();
         break;
 
     case 4:
@@ -120,6 +121,33 @@ void printEndangeredSpecies()
     cout << " Select >> ";
 
     returnToMenu();
+}
+
+void printUsage()
+{
+    cout << "============================================================================" << endl;
+    cout << "                                 HOW TO USE                                 " << endl;
+    cout << "============================================================================" << endl;
+    cout << " By choosing 1 on the main menu, you're taken to a second menu where you can" << endl;
+    cout << "see the different things you can do with records." << endl;
+    cout << " By creating records, you can keep track of the marine wildlife and make sure" << endl; 
+    cout << "species aren't going extinct." << endl;
+    cout << "   Choosing option 1 you are allowed to create a new record, by inputing an ID" << endl; 
+    cout << "  for it and entering the name of the animal that the record is for." << endl;
+    cout << "   Choosing option 2 you are allowed to update an already existing record in" << endl;
+    cout << "  case you made a mistake when creating it or it's information changed." << endl;
+    cout << "   Choosing option 3 you can delete an existing record." << endl;
+    cout << "   Choosing option 4 you can search for a particular record by inputing it's ID." << endl;
+    cout << "   Choosing option 5 you can see all of the records created displayed in a list." << endl;
+    cout << "   Choosing option 6 you return to the main menu. Choosing option 6 is very" << endl; 
+    cout << "  important because it also saves any changes that you have made to the records." << endl;
+    cout << "  If you exit the program without choosing option 6, you will lose your changes!" << endl << endl;
+
+    cout << " By choosing 2 on the main menu you get taken to a list of endangered animals." << endl;
+    cout << "This option is mainly for edicational purposes and cannot be edited by the user." << endl << endl;
+
+    cout << " By choosing 3 you get taken to the information you are reading now." << endl << endl;
+    /* Continue text */
 }
 
 void printTeamInformation()
