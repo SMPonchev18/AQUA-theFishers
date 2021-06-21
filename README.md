@@ -8,7 +8,7 @@
 * Alexandra Staykova - 9V - JavaScript Developer - ASStaykova19@codingburgas.bg
 * Tereza Opanska - 9V - C++ Developer - TNOpanska19@codingburgas.bg
 * Petar Petkov - 10G - SQL Developer - PGPetkov18@codingburgas.bg
-* Stoyan Ponchev - 10G - SQL Developer - SMPonchev18@codingburgas.bg
+* Stoyan Ponchev - 10G - Scrum Trainer & SQL Developer - SMPonchev18@codingburgas.bg
 
 ## 📖 Project description:
 This is our repository for the Collaboration Team Project - AQUA. We are making a program that will help people working with marine wildlife and a website for the application.
