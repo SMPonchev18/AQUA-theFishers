@@ -51,11 +51,11 @@
 .figureBoxTemplate:hover .divWithHover{
     transform: translateY(-110%) scale(1);
 }
-.imageIndivWithoutHover{
-    width:90%;
-    height:90%;
-    margin-top:1rem;
-    margin-left:1rem;
+.imageInDivWithoutHover{
+    width:60%;
+    height:60%;
+    transform: translate(35%, 35%);
+
 }
 .textInDivWithHover{
     color:black;
