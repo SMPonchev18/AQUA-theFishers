@@ -1,0 +1,17 @@
+#imageAndTextDiv{
+    width:100%;
+    background-color: #f2f2f0;
+    height:82%;
+}
+
+#image:hover{
+    opacity:1;
+}
+#textDiv{
+    width:30%;
+    height:80%;
+    border-style:solid;
+    float:left;
+    margin-top:4rem;
+    margin-left:4rem;
+}
