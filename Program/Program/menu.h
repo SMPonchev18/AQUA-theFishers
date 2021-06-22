@@ -2,7 +2,13 @@
 
 using namespace std;
 
+extern string user_status;
+
 void printMenu();
+
+void askForStatus();
+
+string inputStatus();
 
 int inputChoice();
 

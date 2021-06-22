@@ -4,6 +4,8 @@
 
 using namespace std;
 
+extern string user_status;
+
 void openFile();
 
 void createRecord();

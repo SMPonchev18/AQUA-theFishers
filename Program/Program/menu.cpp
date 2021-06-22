@@ -5,6 +5,8 @@
 
 using namespace std;
 
+string user_status;
+
 void printMenu()
 {
 
@@ -23,6 +25,44 @@ void printMenu()
     cout << endl << "Select >> ";
 
     choice(inputChoice());
+}
+
+void askForStatus()
+{
+    cout << "What kind of a role do you have?" << endl;
+    cout << "Administrator/Assistant/Employee" << endl << endl;
+
+    cout << "Select >> ";
+    user_status = inputStatus();
+
+    system("CLS");
+
+    printMenu();
+}
+
+string inputStatus()
+{
+    string status;
+    bool check = false;
+
+    while (check == false)
+    {
+        cin >> status;
+
+        if (status != "Administrator" && status != "Assistant" && status != "Employee" && status != "administrator" && status != "assistant" && status != "employee")
+        {
+            cout << endl << "You entered an invalid role. Please try again." << endl << endl;
+            cout << "Select >> ";
+            check = false;
+        }
+
+        else    // The user entered a valid role
+        {
+            check = true;
+        }
+    }
+
+    return status;
 }
 
 int inputChoice()   // Takes the user's choice
