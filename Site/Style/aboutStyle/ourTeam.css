@@ -19,11 +19,103 @@
     height:90%;
     border-style:solid;
     border-radius: 0.8rem;
-    display:inline-block;
+    float:left;
+    
 }
 .circleImage{
     width:45%;
     height:28%;
-    border-style:solid;
+    margin:auto;
+    margin-top:2rem;
     border-radius: 100%;
+    box-shadow: 5px 5px 20px grey;
+}
+#sonerImage{
+    background-image: url("../../Images/sonerCircleImage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#zhivkoImage{
+    background-image: url("../../Images/zhivkoCircleImage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#teresaImage{
+    background-image: url("../../Images/teresaCircleImage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#alexandraImage{
+    background-image: url("../../Images/alexandraCircleImage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#stoyanImage{
+    background-image: url("../../Images/stoyanCircleImage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#peterImage{
+    background-image: url("../../Images/peterCircleImage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.theTextInTheCards{
+    width:100%;
+    height:68%;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+
+}
+.hiI{
+    text-align:center;
+    font-family: 'Nunito', sans-serif;
+    font-size:2.5rem;
+}
+.role{
+    text-align:center;
+    font-family: 'Nunito', sans-serif;
+    font-size:1.5rem;
+    margin-top:-2rem;
+}
+.mainTextDiv{
+    width:100%;
+    height:53%;
+    border-style:solid;
+}
+.mainTextDiv{
+    text-align:center;
+    font-family: 'Nunito', sans-serif;
+    font-size:1rem;
+    margin-top:-2rem;
+}
+.socialIcons{
+    width:100%;
+    height:17%;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+}
+#facebookIcon{
+    color:#808f99;
+    font-size:3rem;
+    margin-left:3rem;
+    margin-top:1rem;
+}
+#twitterIcon{
+    color:#808f99;
+    font-size:3rem;
+    margin-left:3rem;
+    margin-top:1rem;
+}
+#instagramIcon{
+    color:#808f99;
+    font-size:3rem;
+    margin-left:3rem;
+    margin-top:1rem;
+}
+#youtubeIcon{
+    color:#808f99;
+    font-size:3rem;
+    margin-left:3rem;
+    margin-top:1rem;
 }
