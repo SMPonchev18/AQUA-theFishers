@@ -228,22 +228,52 @@ void mainProgram()
 		switch (option)
 		{
 		case 1:
-			createRecord();
-			system("CLS");
+			if (user_status == "Administrator" || user_status == "administrator" || user_status == "Assistant" || user_status == "assistant")
+			{
+				createRecord();
+				system("CLS");
+			}
+
+			else
+			{
+				system("CLS");
+				cout << "Your authority isn't high enough to do this operation!" << endl << endl;
+			}
+
 			break;
 
 		case 2:
-			cin.ignore();
-			cout << endl << "Search by ID >> ";
-			getline(cin, input_id);
-			updateRecord(input_id);
+			if (user_status == "Administrator" || user_status == "administrator" || user_status == "Assistant" || user_status == "assistant")
+			{
+				cin.ignore();
+				cout << endl << "Search by ID >> ";
+				getline(cin, input_id);
+				updateRecord(input_id);
+			}
+
+			else
+			{
+				system("CLS");
+				cout << "Your authority isn't high enough to do this operation!" << endl << endl;
+			}
+
 			break;
 
 		case 3:
-			cin.ignore();
-			cout << endl << "Delete by ID >> ";
-			getline(cin, input_id);
-			deleteRecord(input_id);
+			if (user_status == "Administrator" || user_status == "administrator" || user_status == "Assistant" || user_status == "assistant")
+			{
+				cin.ignore();
+				cout << endl << "Delete by ID >> ";
+				getline(cin, input_id);
+				deleteRecord(input_id);
+			}
+
+			else
+			{
+				system("CLS");
+				cout << "Your authority isn't high enough to do this operation!" << endl << endl;
+			}
+
 			break;
 
 		case 4:
