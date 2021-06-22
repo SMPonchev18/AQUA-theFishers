@@ -3,7 +3,7 @@
 ### Team: TheFishers
 
 ## 💻 Team members:
-* Zhivko Spasov - 8G - HTML and css Developer - ZZSpasov20@codingburgas.bg
+* Zhivko Spasov - 8G - HTML & CSS Developer - ZZSpasov20@codingburgas.bg
 * Soner Solakov - 8A - Designer - SYSolakov20@codingburgas.bg
 * Alexandra Staykova - 9V - JavaScript Developer - ASStaykova19@codingburgas.bg
 * Tereza Opanska - 9V - C++ Developer - TNOpanska19@codingburgas.bg
