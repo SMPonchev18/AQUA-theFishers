@@ -1,0 +1,26 @@
+#loginDiv{
+    width:60%;
+    height:70%;
+    border-style: solid;
+    margin:auto;
+    margin-top:7rem;
+    margin-bottom:5rem;
+}
+#extraContent{
+    width:50%;
+    float:left;
+    height:100%;
+    background-color: lemonchiffon;
+}
+#form{
+    width:50%;
+    float:left;
+    height:100%;
+}
+#titleOfTheForm{
+    text-align:center;
+    font-family: 'Nunito', sans-serif;
+    font-size:3.5rem;
+    color:balck;
+    margin-top:2rem;
+}
