@@ -20,3 +20,5 @@ You can download our project by using the green "Code" button.
 Or by pasting the following code in your CMD:
 git clone https://github.com/SMPonchev18/AQUA-theFishers.git
 ```
+## 🖊 Program Diagram
+![Program Diagram](/Documents/diagram.jpg)
