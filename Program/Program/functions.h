@@ -24,6 +24,6 @@ void mainProgram();
 
 int inputChoiceProgramme();
 
-bool idCheck(string id); 
+bool checkIdLenght(string id);
 
-bool idAlreadyExist(string id);
+bool checkExistence(string id);
