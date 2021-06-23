@@ -239,6 +239,8 @@ void returnToMenu()
 
         else if (answer == 'N' || answer == 'n')    // User wants to exit the program
         {
+            system("CLS");
+            cout << "Thank you for using our program! :)" << endl;
             exit(0);
         }
 

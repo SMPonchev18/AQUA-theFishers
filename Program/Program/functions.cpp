@@ -48,8 +48,8 @@ void createRecord()
 	while (!check || !check2)	// Checks the entered ID
 	{
 		cin.getline(id, 100);
-		check = idCheck(id);
-		check2 = idAlreadyExist(id);
+		check = checkIdLenght(id);
+		check2 = checkExistence(id);
 
 		if (!check)		// ID isn't made out of 4 symbols
 		{
