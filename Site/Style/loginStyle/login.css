@@ -1,6 +1,6 @@
 #loginDiv{
     width:60%;
-    height:70%;
+    height:80%;
     border-style: solid;
     margin:auto;
     margin-top:7rem;
@@ -23,4 +23,23 @@
     font-size:3.5rem;
     color:balck;
     margin-top:2rem;
+}
+#fieldset{
+    border-style:solid;
+    border-color:white;
+}
+.label{
+    display:block;
+    margin-bottom:0.5rem;
+    font-family: 'Nunito', sans-serif;
+    font-size:2.5rem;
+}
+.input{
+    display:block;
+    font-size:1.6rem;
+    border-style:solid;
+    border-color:white;
+    border-bottom-style:solid;
+    border-bottom-color:#d0b49f;
+    margin-bottom:1rem;
 }
