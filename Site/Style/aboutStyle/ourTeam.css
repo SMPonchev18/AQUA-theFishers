@@ -22,18 +22,23 @@
 }
 .peopleCards:hover{
     box-shadow: 3px 3px 20px grey;
+    transition: 0.6s;
 }
 .peopleCards:hover #facebookIcon{
     color:#1778f2;
+    transition: 0.6s;
 }
 .peopleCards:hover #twitterIcon{
     color:#1c9cea;
+    transition: 0.6s;
 }
 .peopleCards:hover #instagramIcon{
     color:purple;
+    transition: 0.6s;
 }
 .peopleCards:hover #youtubeIcon{
     color:#f70000;
+    transition: 0.6s;
 }
 .circleImage{
     width:45%;
