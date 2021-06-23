@@ -1,11 +1,77 @@
 #contactUs{
     width:100%;
-    height:100%;
+    height:110%;
 }
 #pictureInContactUs{
     float:left;
     width:30%;
     height:90%;
     margin-top:3rem;
-    background-color: black;
+    margin-left:18rem;
+    background-image:url("../../Images/contactUsImage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 10px grey;
+}
+#contactUsContent{
+    float:left;
+    width:40%;
+    height:80%;
+    margin-top:6rem;
+    margin-left:-2rem;
+}
+#contactUsForm{
+    width:100%;
+    height:100%;
+}
+.contactUsFormInput{
+    display:block;
+    font-size:2rem;
+    font-family: 'Nunito', sans-serif;
+    border-style:solid;
+    border-color:white;
+    border-bottom-style:solid;
+    border-bottom-color:#9d614c;
+    text-align:center;
+    margin:auto;
+    margin-top:3rem;
+    outline-style: solid;
+    outline-color: white;
+}
+#contactUsContentTitle{
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    font-size:3rem;
+    text-align:center;
+}
+#contactUsContentText{
+    font-size:1.3rem;
+    text-align:center;
+    padding-left:5rem;
+    padding-right:5rem;
+    font-family: 'Nunito', sans-serif;
+}
+#sendButton{
+    font-size:2em;
+    border-style:solid;
+    border-color:#9d614c;
+    background-color: white;
+    width:60%;
+    height:7%;
+    font-family: 'Nunito', sans-serif;
+    margin-left:9.3rem;
+    margin-top:1rem;
+}
+#textArea{
+    margin-left:10rem;
+    margin-top:1rem;
+    font-family: 'Nunito', sans-serif;
+}
+#sendButton:hover{
+    background-color: #9d614c;
+    color:white;
+}
+.contactUsFormInput:focus{
+   border-style:solid;
+   border-color:#9d614c;
 }
