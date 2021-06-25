@@ -14,7 +14,7 @@
 }
 .list{
     list-style: none;
-    font-size:1.6rem;
+    font-size:1.7rem;
     font-family: 'Nunito', sans-serif;
 }
 .links{
@@ -23,6 +23,12 @@
     display:inline-block;
     padding-top: 3rem;
     padding-left: 3rem;
+}
+.links:hover{
+    color:#ab7a54;
+}
+#about{
+    color:#ab7a54;
 }
 #aquaWhichSeparatesTheNavigationBar{
     width:20%;

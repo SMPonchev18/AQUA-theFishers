@@ -1,12 +1,12 @@
 #contactUs{
     width:100%;
-    height:110%;
+    height:120%;
 }
 #pictureInContactUs{
     float:left;
     width:30%;
-    height:90%;
-    margin-top:3rem;
+    height:80%;
+    margin-top:7rem;
     margin-left:18rem;
     background-image:url("../../Images/contactUsImage.png");
     background-size: cover;
@@ -63,7 +63,7 @@
     margin-top:1rem;
 }
 #textArea{
-    margin-left:10rem;
+    margin-left:8rem;
     margin-top:1rem;
     font-family: 'Nunito', sans-serif;
 }
