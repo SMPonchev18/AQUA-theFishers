@@ -43,18 +43,15 @@ h2{
 #contact{
     color:#ab7a54;
 }
-#supportTitle{
-	color: transparent;
-	-webkit-text-stroke: 2px #0691ce;
-}
 #mainTitle{
-	background:-webkit-linear-gradient(#0dd0e4,#095d9c);
-	-webkit-background-clip:text;
-	-webkit-text-fill-color:transparent;
 	animation-name: animatedWave;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function:ease-in-out;
+    color:#0096cc;
+}
+#supportTitle{
+    color:transparent;
 }
 @keyframes animatedWave
 { 
