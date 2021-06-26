@@ -38,26 +38,26 @@ void createRecord()
 {
 	char id[100];
 	char name[50];
-	bool check = false;
-	bool check2 = false;
+	bool check_symbols = false;
+	bool check_existance = false;
 
 	cin.ignore();
 
 	cout << endl  << "Enter record ID >> ";
 
-	while (!check || !check2)	// Checks the entered ID
+	while (!check_symbols || !check_existance)	// Checks the entered ID
 	{
 		cin.getline(id, 100);
-		check = checkIdLenght(id);
-		check2 = checkExistence(id);
+		check_symbols = checkIdLenght(id);
+		check_existance = checkExistence(id);
 
-		if (!check)		// ID isn't made out of 4 symbols
+		if (!check_symbols)		// ID isn't made out of 4 symbols
 		{
 			cout << endl << "ID must be made out of 4 symbols!" << endl << endl;
 			cout << "Enter record ID >> ";
 		}
 
-		if (!check2)	// ID already exists
+		if (!check_existance)	// ID already exists
 		{
 			cout << endl << "This ID already exists!" << endl << endl;
 			cout << "Enter record ID >> ";
