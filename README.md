@@ -1,6 +1,7 @@
 # The Marathon 2021 - AQUA
 
 ### Team: TheFishers
+<p align="center"><img src="Site/Icons/logo.jpg" width: 50%;></p>
 
 ## 💻 Team members:
 * Zhivko Spasov - 8G - HTML & CSS Developer - ZZSpasov20@codingburgas.bg
