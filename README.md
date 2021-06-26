@@ -11,7 +11,7 @@
 * Stoyan Ponchev - 10G - Scrum Trainer & SQL Developer - SMPonchev18@codingburgas.bg
 
 ## 📖 Project description:
-This is our repository for the The Marathon 2021 - AQUA. We are making a program that will help people working with marine wildlife and a website for the application.
+This is our repository for the project The Marathon 2021 - AQUA. We are making a program that will help people working with marine wildlife and a website for the application.
 
 ## ⚙️ Installation
 ```
