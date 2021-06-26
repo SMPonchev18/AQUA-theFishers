@@ -1,11 +1,13 @@
 #devicesDiv{
     width:100%;
     height:100%;
+    background-color: #363945;
 }
 #tabletImage{
-    width:53%;
-    height:80%;
-    transform: translate(-50%, -50%);
+    width:50%;
+    height:85%;
+    transform: translate(-10%, -50%);
     margin-top: 25%;
     margin-left: 50%;
+    
 }
