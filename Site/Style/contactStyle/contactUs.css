@@ -31,11 +31,11 @@
     border-style:solid;
     border-color:white;
     border-bottom-style:solid;
-    border-bottom-color:#9d614c;
+    border-bottom-color:#cccccc;
     text-align:center;
     margin:auto;
     margin-top:3rem;
-    margin-left: 13rem;
+    margin-left:27%;
     outline-style: solid;
     outline-color: white;
 }
@@ -44,37 +44,99 @@
     font-family: 'Nunito', sans-serif;
     font-size:3rem;
     text-align:center;
+    margin-left:10%;
 }
 #contactUsContentText{
     font-size:1.3rem;
     text-align:center;
-    padding-left:5rem;
-    padding-right:5rem;
+    margin-left:25%;
+    padding-right:7rem;
     font-family: 'Nunito', sans-serif;
+}
+#sendDiv{
+    position: absolute;
+    width:21.5%;
+    height:6%;
+    margin-top:0.5rem;
+    margin-left:10.7%;
 }
 #sendButton{
-    font-size:2em;
-    border-style:solid;
-    border-color:#9d614c;
-    background-color: white;
-    width:60%;
-    height:7%;
+    width:100%;
+    height:100%;
+    font-size:2rem;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    top:0;
+    left:0;
+    border-style: solid;
+    border-color: #ede4e3;
+    background-color: #ede4e3;
     font-family: 'Nunito', sans-serif;
-    margin-left:9.3rem;
-    margin-top:1rem;
-    outline-style: solid;
-    outline-color: white;
+    letter-spacing: 0.2rem;
+    background-color: white;
+    border-style:solid;
+    border-color:white;
+}
+#sendButton:before{
+    content:'';
+    width:1rem;
+    height:1rem;
+    position: absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+    border-top:2px solid  #ab7a54;
+    border-left:2px solid  #ab7a54;
+    transition: 0.5s;
+}
+#sendButton:after{
+    content:'';
+    width:1rem;
+    height:1rem;
+    position: absolute;
+    z-index:-1;
+    bottom:0;
+    right:0;
+    border-bottom:2px solid  #ab7a54;
+    border-right:2px solid  #ab7a54;
+    transition: 0.5s;
+}
+#sendDiv:hover #sendButton:before{
+    width:100%;
+    height:100%;
+}
+#sendDiv:hover #sendButton:after{
+    width:100%;
+    height:100%;
 }
 #textArea{
-    margin-left:14rem;
+    margin-left:27%;
     margin-top:1rem;
     font-family: 'Nunito', sans-serif;
+    outline-style: solid;
+    outline-color: white;
+    border-style:solid;
+    border-color:#cccccc;
 }
-#sendButton:hover{
-    background-color: #9d614c;
-    color:white;
+#textArea:focus{
+    border-style:solid;
+    border-color:#9d614c;
 }
 .contactUsFormInput:focus{
-   border-style:solid;
-   border-color:#9d614c;
+   border-bottom-color:#9d614c;
+}
+#send{
+    font-size:1em;
+    background-color: white;
+    width:90%;
+    height:75%;
+    letter-spacing: 0.5rem;
+    font-family: 'Nunito', sans-serif;
+    margin-left:0%;
+    margin-top:2%;
+    border-style:solid;
+    border-color:white;
+    outline-style: solid;
+    outline-color: white;
 }
