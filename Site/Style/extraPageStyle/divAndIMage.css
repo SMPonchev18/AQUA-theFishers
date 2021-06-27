@@ -1,7 +1,9 @@
 .divAndIMage{
     width:100%;
     height:85%;
-    border-style:solid;
+}
+#firstDivAndImage{
+    margin-top:5rem;
 }
 .image{
     float:left;
@@ -60,4 +62,29 @@
     padding-right:5rem;
     padding-top:0rem;
     text-align: center;
+}
+
+#thirdImage{
+    background-image: url('../../Images/fishImageForExtraPage3.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#fourImage{
+    background-image: url('../../Images/fishImageForExtraPage4.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#fifthImage{
+    background-image: url('../../Images/fishImageForExtraPage5.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#sixImage{
+    background-image: url('../../Images/fishImageForExtraPage6.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
