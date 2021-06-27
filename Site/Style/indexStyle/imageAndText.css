@@ -7,7 +7,7 @@
     width:25%;
     height:90%;
     float:left;
-    margin-left:10rem;
+    margin-left:20rem;
     margin-top:2.5rem;
     background-image: url('../../Images/koiFishImage.png');
     background-size: cover;
@@ -17,7 +17,7 @@
     width:40%;
     height:100%;
     float:left;
-    margin-left:15rem;
+    margin-left:10rem;
 }
 #DivOfTitleOfTextDiv{
     width:75%;

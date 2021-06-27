@@ -18,3 +18,14 @@
     font-size:1.9rem;
     text-align:center;
 }
+#readMore{
+    font-family: 'Nunito', sans-serif;
+    font-size:2rem;
+    text-align:center;
+    color:#9d614c;
+    margin-top:4rem;
+}
+#readMoreLink{
+    text-decoration:none;
+    color:#9d614c;
+}
