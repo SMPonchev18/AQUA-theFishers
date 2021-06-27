@@ -1,13 +1,87 @@
 #devicesDiv{
     width:100%;
     height:100%;
-    background-color: #363945;
+    background-color: #EDE4E3;
 }
-#tabletImage{
+#textInDevicesDiv{
+    width:35%;
+    height:100%;
+    float:left;
+    margin-left:7%; 
+}
+#deeviceImage{
     width:50%;
     height:85%;
-    transform: translate(-10%, -50%);
-    margin-top: 25%;
-    margin-left: 50%;
+    float:right;  
+}
+#textContent{
+    font-size: 3.3rem;
+	font-family: 'Nunito', sans-serif;
+    margin-top:2rem;
+    padding-left:4rem;
+    padding-right:4rem;
+    text-align:center;
+
+}
+#formOfTheButton{
+    width:100%;
+    height:20%;
     
+}
+#downloadDiv{
+    width:16%;
+    height:10%;
+    font-size:2rem;
+    position: absolute;
+    margin-left:10%;
+}
+#downloadButton{
+    width:100%;
+    height:100%;
+    font-size:2rem;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    top:0;
+    left:0;
+    border-style: solid;
+    border-color: #ede4e3;
+    background-color: #ede4e3;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 0.2rem;
+}
+#downloadButton:before{
+    content:'';
+    width:1rem;
+    height:1rem;
+    position: absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+    border-top:2px solid  #ab7a54;
+    border-left:2px solid  #ab7a54;
+    transition: 0.5s;
+}
+#downloadButton:after{
+    content:'';
+    width:1rem;
+    height:1rem;
+    position: absolute;
+    z-index:-1;
+    bottom:0;
+    right:0;
+    border-bottom:2px solid  #ab7a54;
+    border-right:2px solid  #ab7a54;
+    transition: 0.5s;
+}
+#downloadDiv:hover #downloadButton:before{
+    width:100%;
+    height:100%;
+}
+#downloadDiv:hover #downloadButton:after{
+    width:100%;
+    height:100%;
+}
+#downloadDiv:hover #downloadButton{
+    color:#78553b;
 }
