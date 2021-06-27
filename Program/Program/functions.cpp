@@ -43,7 +43,7 @@ void createRecord()
 
 	cin.ignore();
 
-	cout << endl  << "Enter record ID >> ";
+	cout << endl << "Enter record ID >> ";
 
 	while (!check_symbols || !check_existance)	// Checks the entered ID
 	{
@@ -335,7 +335,7 @@ int inputChoiceProgramme()
 
 bool checkIdLenght(string id)		// Checks if ID is made out of 4 symbols
 {
-	if (id.size() != 4)	
+	if (id.size() != 4)
 	{
 		return false;
 	}
