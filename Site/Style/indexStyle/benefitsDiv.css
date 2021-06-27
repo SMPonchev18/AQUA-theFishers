@@ -33,7 +33,7 @@
     height:100%;
     border-radius: 1rem;
     background-color:#1e1e1e;
-    transition: 0.3s;
+    transition: 0.1s;
     position: relative;
 }
 .divWithHover{
@@ -42,7 +42,7 @@
     border-radius: 1rem;
     background-color:#1e1e1e;
     transform: translate(0%, -100%) scale(0);
-    transition: 0.3s;
+    transition: 0.8s;
 }
 .bigDivBecauseOfTheAnimation:hover .divWithoutHover{
     transform: scale(0.9);
@@ -62,7 +62,8 @@
     color:white;
     font-family: 'Nunito', sans-serif;
     font-size:2.5rem;
-    margin-top:1rem;
+    margin-left: 1rem;
+    margin-top:2rem;
     text-align:center;
     position: absolute;
 }
