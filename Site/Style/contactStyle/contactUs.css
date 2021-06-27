@@ -62,6 +62,8 @@
     font-family: 'Nunito', sans-serif;
     margin-left:9.3rem;
     margin-top:1rem;
+    outline-style: solid;
+    outline-color: white;
 }
 #textArea{
     margin-left:14rem;
