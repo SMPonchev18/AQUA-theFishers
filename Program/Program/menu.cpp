@@ -33,7 +33,7 @@ void askForStatus()
     cout << "Administrator/Assistant/Employee" << endl << endl;
 
     cout << "Select >> ";
-    user_status = inputStatus();
+    user_status = inputStatus();    // Takes input from user
 
     system("CLS");
 

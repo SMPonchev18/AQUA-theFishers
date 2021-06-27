@@ -22,8 +22,8 @@ void openFile()	// Starts reading the Records.txt file so it can input informati
 		while (getline(file, line))
 		{
 			size_t j = line.size();
-			record_id[i] = line.substr(0, 4);
-			record_name[i] = line.substr(5, j - 5);
+			record_id[i] = line.substr(0, 4);			// Adds all of the IDs from the file into an array
+			record_name[i] = line.substr(5, j - 5);		// Adds all of the record names from the file into an array
 			i++;
 		}
 	}
