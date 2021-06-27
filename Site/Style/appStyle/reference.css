@@ -23,7 +23,6 @@
     margin-left:55%;
     font-size:2rem;
     position: absolute;
-
 }
 #referenceButton{
     width:100%;
@@ -55,4 +54,7 @@
 }
 #referenceButtonDiv:hover #referenceButton:before{
     transform: skewX(40deg) scaleX(1);
+}
+#referenceButtonDiv:hover #referenceButton{
+    color:white;
 }
