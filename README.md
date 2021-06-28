@@ -4,12 +4,16 @@
 <p align="center"><img src="Site/Icons/logo.jpg" width: 50%;></p>
 
 ## 💻 Team members:
+* Stoyan Ponchev - 10G - Scrum Trainer & SQL Developer - SMPonchev18@codingburgas.bg
+* Petar Petkov - 10G - SQL Developer - PGPetkov18@codingburgas.bg
+* Tereza Opanska - 9V - C++ Developer - TNOpanska19@codingburgas.bg
+* Alexandra Staykova - 9V - JavaScript Developer - ASStaykova19@codingburgas.bg
 * Zhivko Spasov - 8G - HTML & CSS Developer - ZZSpasov20@codingburgas.bg
 * Soner Solakov - 8A - Designer - SYSolakov20@codingburgas.bg
-* Alexandra Staykova - 9V - JavaScript Developer - ASStaykova19@codingburgas.bg
-* Tereza Opanska - 9V - C++ Developer - TNOpanska19@codingburgas.bg
-* Petar Petkov - 10G - SQL Developer - PGPetkov18@codingburgas.bg
-* Stoyan Ponchev - 10G - Scrum Trainer & SQL Developer - SMPonchev18@codingburgas.bg
+
+
+
+
 
 ## 📖 Project description:
 This is our repository for the project The Marathon 2021 - AQUA. We are making a program that will help people working with marine wildlife and a website for the application.
