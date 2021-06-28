@@ -13,7 +13,7 @@
 
     <link href = "../Style/registrateStyle/bodyAndHtml.css" type = "text/css" rel = "stylesheet">
     <link href = "../Style/registrateStyle/navigationBar.css" type = "text/css" rel = "stylesheet">
-
+    <link href = "../Style/form.css" type = "text/css" rel = "stylesheet">
     <link href = "../Style/indexStyle/footer.css" type = "text/css" rel = "stylesheet">
 
 </head>
@@ -72,7 +72,7 @@
                                 <a href = "../Pages/about.html" class = "links"  ><li class = "list">About</li></a>
                                 <a href = "../Pages/contact.html" class = "links"><li class = "list">Contact</li></a>
                                 <a href = "../Pages/login.html" class = "links" ><li class = "list" >Login</li></a>
-                                <a href = "../Pages/Registrete.html" class = "links" id = "registrate"><li class = "list" >Registrate</li></a>
+                                <a href = "../Pages/register.html" class = "links" id = "register"><li class = "list" >Register</li></a>
 
                             </ul>
 
@@ -88,7 +88,32 @@
 
     <!--/Navigation bar-->
    
-   
+    <div class="testbox">
+        <h1>Registration</h1>
+      
+        <form action="/auth/register" method="POST">
+            <hr>
+                
+        <label id="icon" for="email"><i class="icon-envelope "></i></label>
+        <input type="text" name="email" id="email" placeholder="Email" required/>
+
+        <label id="icon" for="name"><i class="icon-user"></i></label>
+        <input type="text" name="name" id="name" placeholder="Name" required/>
+
+        <label id="icon" for="password"><i class="icon-shield"></i></label>
+        <input type="password" name="password" id="password" placeholder="Password" required/> 
+
+        <label id="icon" for="confirmPassword"><i class="icon-shield"></i></label>
+        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required/> 
+
+        <div class="button-wrapper"><a href="#" class="button">Register</a></div>
+        
+        </form>
+
+      </div>
+
+
+
     <!--Footer-->
 
         <div id = "footer">
