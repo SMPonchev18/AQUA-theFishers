@@ -14,6 +14,10 @@
 ## 📖 Project description:
 This is our repository for the project The Marathon 2021 - AQUA. We are making a program that will help people working with marine wildlife and a website for the application.
 
+
+##  🏹 Our mission:
+As recreational anglers, we have an opportunity to play an impactful role as stewards of the environment and to set an example for others. We treat our resources with respect and leave them a little better than we found them. Saving fish species is a byproduct of responsible conservation and one we can all attribute to.
+
 ## ⚙️ Installation
 ```
 You can download our project by using the green "Code" button.
